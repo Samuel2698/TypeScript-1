@@ -16,8 +16,11 @@ var texto = "velascodev.fr";
 console.log(texto, numero, verdadero);
 var personas = ["Samuel", "Romane", "Luis"];
 var div_personas = document.querySelector("#personas");
-div_personas.innerHTML = "<ul>";
-personas.map(function (persona) {
-    div_personas.innerHTML += "<li>".concat(persona, "</li>");
-});
-div_personas.innerHTML += "</ul>";
+div_personas.innerHTML =
+    "<ul>" +
+        personas
+            .map(function (persona) {
+            return "<li>".concat(persona, "</li>");
+        })
+            .join("");
+("</ul>");

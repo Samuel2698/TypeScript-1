@@ -27,10 +27,12 @@ let personas: string[] = ["Samuel", "Romane", "Luis"];
 
 let div_personas: HTMLElement | null = document.querySelector("#personas");
 
-div_personas.innerHTML = "<ul>";
+div_personas.innerHTML =
+  "<ul>" +
+  personas
+    .map((persona) => {
+      return `<li>${persona}</li>`;
+    })
+    .join("");
 
-personas.map((persona) => {
-  div_personas.innerHTML += `<li>${persona}</li>`;
-});
-
-div_personas.innerHTML += "</ul>";
+("</ul>");
