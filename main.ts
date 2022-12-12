@@ -23,7 +23,7 @@ let texto: string = "velascodev.fr";
 
 console.log(texto, numero, verdadero);
 
-let personas: string[] = ["Samuel", "Romane", "Luis"];
+let personas: string[] = ["Samuel", "Romane", "Luis", "Miguel", "Camila"];
 
 let div_personas: HTMLElement | null = document.querySelector("#personas");
 

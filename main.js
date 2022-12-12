@@ -14,7 +14,7 @@ var nombre = "Samuel Velasco";
 // nombre="Pepe"
 var texto = "velascodev.fr";
 console.log(texto, numero, verdadero);
-var personas = ["Samuel", "Romane", "Luis"];
+var personas = ["Samuel", "Romane", "Luis", "Miguel", "Camila"];
 var div_personas = document.querySelector("#personas");
 div_personas.innerHTML =
     "<ul>" +
